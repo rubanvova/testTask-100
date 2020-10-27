@@ -17,6 +17,8 @@ import slide5 from "./img/slide5.jpg";
 import post1 from "./img/post1.png";
 import post2 from "./img/post2.png";
 import post3 from "./img/post3.png";
+import slide22 from "./img/slide22.jpg";
+import slide33 from "./img/slide33.jpg";
 
 import styles from "./App.module.css";
 
@@ -232,10 +234,10 @@ const App = () => {
                   надежно, практично и долговечно прослужат Вам!
                 </div>
               </div>
-              <img src={slide} alt="" width="150px" height="91px" />
+              <img src={slide22} alt="" width="150px" height="91px" />
             </div>
             <div className={styles.rowContent}>
-              <img src={slide} alt="" width="150px" height="91px" />
+              <img src={slide33} alt="" width="150px" height="91px" />
               <div className={styles.row}>
                 <span>Качество</span>
                 <div>
