@@ -1,0 +1,521 @@
+.App {
+  min-width: 480px;
+  background: #eee;
+  font-family: "AvenirNextCyr", sans-serif;
+}
+
+.wrapper {
+  margin: 0 auto;
+  width: 480px;
+  background: #fff;
+}
+
+.header {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  height: 116px;
+  background: linear-gradient(#c15041, #fe6c42);
+  color: #fff;
+}
+
+.header h1 {
+  margin: 0 0 5px;
+  font-weight: 700;
+  font-size: 19px;
+  line-height: 22px;
+}
+
+.header div {
+  font-size: 46px;
+  font-family: "Oswald", sans-serif;
+}
+
+.timerWrapper {
+  padding: 8px 10px 7px 20px;
+}
+
+.textTimer {
+  position: relative;
+  display: flex;
+  align-items: center;
+}
+
+.textTimer img {
+  padding-right: 10px;
+}
+
+.text span {
+  text-transform: uppercase;
+  font-weight: 700;
+  color: red;
+  font-size: 19px;
+}
+
+.redArrow {
+  display: inline-block;
+  position: absolute;
+  left: 185px;
+  width: 40px;
+  height: 30px;
+  animation-name: arrow;
+  animation-duration: 4s;
+  animation-timing-function: linear;
+  /* animation-delay: 0s; */
+  animation-iteration-count: infinite;
+  animation-direction: normal;
+  animation-fill-mode: none;
+  animation-play-state: running;
+  transform: rotateX(360deg);
+}
+
+@keyframes arrow {
+  0% {
+    transform: rotateX(0deg);
+  }
+  100% {
+    transform: rotateX(360deg);
+  }
+}
+
+.timerTexts {
+  display: flex;
+  margin-left: 60px;
+  color: #333;
+}
+
+.timerText {
+  font-size: 12px;
+}
+
+.timerTexts div:nth-child(1) {
+  padding: 0px 3px;
+}
+.timerTexts div:nth-child(2) {
+  padding: 0px 20px;
+}
+.timerTexts div:nth-child(3) {
+  padding: 0px 3px;
+}
+.timerTexts div:nth-child(4) {
+  padding: 0px 14px;
+}
+
+.number {
+  display: flex;
+  font-weight: 700;
+  font-size: 30px;
+}
+
+.number div {
+  margin: 0px 5px;
+}
+
+.wrapperKnives {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 44px;
+  background: linear-gradient(#fe6c42, #c15041);
+}
+
+.wrapperKnives {
+  color: #fff;
+  font-size: 19px;
+  margin-bottom: 15px;
+}
+
+.button {
+  display: block;
+  margin: 0 auto;
+  width: 400px;
+  height: 80px;
+  border: none;
+  border-radius: 4px;
+  background: #ffd800;
+  font-family: "AvenirNextCyr", sans-serif;
+  font-weight: 700;
+  font-size: 24px;
+  line-height: 80px;
+  letter-spacing: 2px;
+  color: #333;
+  text-transform: uppercase;
+  text-decoration: none;
+  text-align: center;
+  cursor: pointer;
+}
+
+.sale {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin-top: 20px;
+}
+.sale span {
+  text-align: center;
+  margin: 0 3px;
+  padding: 4px 5px 2px 5px;
+  border-radius: 4px;
+  background: red;
+  color: #fff;
+}
+
+.wrapperPrice {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  border-bottom: 1px solid rgb(218, 211, 211);
+}
+
+.boxPriceOne {
+  padding: 20px 50px;
+}
+
+.boxPriceOne div:first-child {
+  margin: 0 0 5px;
+  font-size: 14px;
+  line-height: 14px;
+  text-align: center;
+}
+
+.boxPriceOne div:last-child {
+  font-weight: 700;
+  font-size: 30px;
+  line-height: 30px;
+  text-decoration: line-through;
+}
+
+.borderPrice {
+  height: 100px;
+  border-left: 1px solid rgb(218, 211, 211);
+}
+
+.boxPriceTwo {
+  padding: 20px 50px;
+}
+
+.boxPriceTwo div:first-child {
+  margin: 0 0 5px;
+  font-size: 14px;
+  line-height: 14px;
+  text-align: center;
+  color: #fff;
+  background-color: red;
+  padding: 4px;
+  border-radius: 4px;
+}
+
+.boxPriceTwo div:last-child {
+  font-weight: 700;
+  font-size: 30px;
+  line-height: 30px;
+}
+
+.wrapperDescription {
+  padding: 12px 0 12px 20px;
+  background: #ff9031;
+  color: #fff;
+  display: flex;
+}
+
+.wrapperDescription div {
+  display: flex;
+  line-height: 16px;
+  font-size: 14px;
+  font-weight: 700;
+  text-shadow: 1px 1px 4px rgba(0, 0, 0, 0.7);
+}
+
+.cercleImg {
+  height: 20px;
+  width: 20px;
+  border: 1px solid rgba(255, 255, 255, 0.2);
+  border-radius: 50%;
+  padding: 7px;
+  margin-right: 8px;
+  background-color: rgba(0, 0, 0, 0.1);
+}
+
+.wrapperVideo {
+  padding: 36px 0px;
+  font-weight: 700;
+  font-size: 30px;
+  line-height: 36px;
+  text-align: center;
+  color: #333;
+}
+
+.wrapperTitle {
+  margin: 30px 0px;
+  font-weight: 700;
+  font-size: 30px;
+  line-height: 36px;
+  text-align: center;
+  color: #333;
+}
+
+.descriptionCnife {
+  text-align: center;
+  font-family: "AvenirNextCyr", sans-serif;
+  font-weight: 600;
+  font-size: 16px;
+  line-height: 24px;
+  font-style: italic;
+  color: #333;
+  padding: 5px;
+}
+
+.happy {
+  font-weight: 700;
+  font-size: 30px;
+  line-height: 36px;
+  color: #333;
+  text-align: center;
+  padding: 36px 0px;
+}
+
+.descriptionText {
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 24px;
+  color: #333;
+  text-align: center;
+  font-style: italic;
+  padding: 20px 0px;
+}
+
+.titleTable {
+  font-weight: 700;
+  font-size: 30px;
+  line-height: 36px;
+  text-align: center;
+  color: #333;
+}
+
+.wrapperTable {
+  padding-bottom: 25px;
+}
+
+.table {
+  border-collapse: collapse;
+}
+
+.td td:nth-child(1) {
+  border: 1px solid #ccc;
+  padding: 6px 40px 6px 7px;
+}
+
+.td td:nth-child(2) {
+  border: 1px solid #ccc;
+  color: #fff;
+  padding: 7px 40px 7px 18px;
+  background: linear-gradient(to left, #c15041, #fe6c42);
+}
+
+.wrapperSale {
+  margin: 0 0 30px;
+  padding: 20px 0 10px 0px;
+  font-weight: 700;
+  font-size: 30px;
+  line-height: 36px;
+  text-align: center;
+}
+
+.wrapperSale span:nth-child(1) {
+  font-size: 40px;
+  color: red;
+}
+
+.wrapperSale span:nth-child(2) {
+  color: red;
+}
+
+.head {
+  height: 20px;
+  background: #fe6c42;
+  color: #fff;
+  font-size: 16px;
+  padding: 5px 0;
+  text-align: center;
+  text-shadow: 1px 1px 1px rgba(0, 0, 0, 0.7);
+}
+
+.content {
+  height: 880px;
+  margin-top: -4px;
+  background: linear-gradient(#c15041, #fe6c42);
+}
+
+.contentTitle {
+  padding: 20px 0px;
+  font-weight: 700;
+  font-size: 30px;
+  line-height: 36px;
+  text-align: center;
+  color: #fff;
+}
+
+.rowContent {
+  padding: 15px;
+  display: flex;
+}
+
+.rowContent img {
+  border: 3px solid #fff;
+  background: #fff;
+  border-radius: 4px;
+}
+
+.row {
+  padding: 0px 0px 0px 20px;
+}
+
+.row span {
+  color: #ffd800;
+  font-weight: 700;
+}
+
+.row div {
+  padding-top: 10px;
+  font-weight: 400;
+  line-height: 24px;
+  color: #fff;
+}
+
+.reviews {
+  color: #000;
+  padding: 20px 0;
+  font-weight: 700;
+  font-size: 30px;
+  line-height: 36px;
+  text-align: center;
+}
+
+.slider {
+  height: 800px;
+}
+
+.zakaz {
+  padding: 20px 0px;
+  font-weight: 700;
+  font-size: 30px;
+  line-height: 36px;
+  text-align: center;
+}
+
+.wrapperFomrs {
+  display: flex;
+  align-items: center;
+  justify-content: space-evenly;
+  padding-bottom: 40px;
+}
+
+.rowOne {
+  width: 150px;
+  padding: 23px 20px 40px 30px;
+  border-radius: 4px;
+  background: #f5f5f5;
+  -webkit-box-shadow: 0 2px 0 #d9d9d9;
+  -moz-box-shadow: 0 2px 0 #d9d9d9;
+  box-shadow: 0 2px 0 #d9d9d9;
+}
+
+.rowOne div:nth-child(1) {
+  font-weight: 600;
+}
+
+.rowOne div:nth-child(2) {
+  margin-top: 15px;
+  margin-bottom: 10px;
+  width: 30px;
+  border: 1px solid #e6e6e6;
+}
+
+.rowOne div:nth-child(3) {
+  line-height: 24px;
+}
+
+.inputs {
+  height: 252px;
+  display: flex;
+  flex-direction: column;
+  padding: 20px 0px;
+}
+
+.input {
+  display: block;
+  margin: 0 auto 20px;
+  padding: 0 20px 0 80px;
+  width: 290px;
+  height: 66px;
+  border: 1px solid #e6e6e6;
+  -webkit-border-radius: 4px;
+  -moz-border-radius: 4px;
+  border-radius: 4px;
+  background-color: #f5f5f5;
+  font-family: "AvenirNextCyr", sans-serif;
+  font-weight: 400;
+  font-size: 16px;
+  color: #333;
+  outline: none;
+  /* margin-top: 25px; */
+  background-image: url(./img/offer_name.png);
+  background-position: 23px center;
+  background-repeat: no-repeat;
+}
+
+.inputs input:nth-child(2) {
+  background-image: url(./img/offer__phone.png);
+  background-position: 20px center;
+}
+
+.wrapperFooter {
+  padding: 30px 0px;
+  text-align: center;
+  line-height: 22px;
+  font-family: "AvenirNextCyr", sans-serif;
+  font-weight: 400;
+  font-size: 13px;
+  color: #333;
+}
+
+.href a {
+  display: flex;
+  flex-direction: column;
+  color: #333;
+}
+
+.count {
+  color: #333;
+  font-size: 30px;
+  font-weight: 700;
+  padding-left: 60px;
+  display: flex;
+}
+
+.count div {
+  padding: 0px 5px;
+}
+
+.castomButton {
+  display: block;
+  margin: 0 auto;
+  width: 400px;
+  height: 80px;
+  border: none;
+  -webkit-border-radius: 4px;
+  -moz-border-radius: 4px;
+  border-radius: 4px;
+  background: #ffd800;
+  font-family: "AvenirNextCyr", sans-serif;
+  font-weight: 700;
+  font-size: 24px;
+  line-height: 80px;
+  letter-spacing: 2px;
+  color: #333;
+  text-transform: uppercase;
+  text-decoration: none;
+  text-align: center;
+  cursor: pointer;
+}
